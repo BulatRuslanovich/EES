@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cписок тестов EES</title>
+</head>
+<body>
+
+<h1>Список тестов</h1>
+
+<a data-th-href="@{create}"> Создать новый товар</a>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Тест</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr data-th-each="test : ${tests}">
+        <td data-th-text="${test.id}"></td>
+        <td>
+            <a data-th-href="@{/tests/{testId}(testId=${test.id})}" data-th-text="${test.name}"></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

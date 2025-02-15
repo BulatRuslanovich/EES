@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[[${test.name}]]</title>
+</head>
+<body>
+
+
+<a data-th-href="@{list}"> К списку тестов</a>
+<h1 data-th-text="${test.name}"></h1>
+
+<ul>
+    <li><strong>ID</strong>: <span data-th-text="${test.id}"></span> </li>
+    <li><strong>Name</strong>: <span data-th-text="${test.name}"></span> </li>
+</ul>
+
+</body>
+</html>

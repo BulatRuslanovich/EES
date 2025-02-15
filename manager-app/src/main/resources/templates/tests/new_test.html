@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новый тест</title>
+</head>
+<body>
+
+<h1>Создать новый тест</h1>
+
+<a data-th-href="@{list}"> К списку тестов</a>
+
+<form method="post" data-th-action="@{create}">
+    <label>
+        Название:<br>
+        <input type="text" name="name" ><br>
+    </label>
+
+    <button type="submit">Создать</button>
+</form>
+
+</body>
+</html>
